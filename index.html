@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/forecast_10790835.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="home">
+    <nav id="navbar" class="navbar navbar-expand-lg text-dark bg-light border-bottom border-color fixed-top">
+      <div class="container-fluid justify-content-around align-items-center">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="images/forecast_10790835.png" width="30" height="30" class="d-inline-block align-top" alt="Weather App">
+          Weather App
+        </a>
+        <button class="navbar-toggler" id="main-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="main-nav">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold px-3" href="#" id="weatherTab">Weather</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Search Section -->
+  <section id="searchSection">
+    <div class="container w-75 py-5 main-padding">
+      <div class="find-container position-relative">
+        <input placeholder="Find Your Location ..." type="search" class="form-control form-control-lg py-3 rounded-5 bg-mainColor" id="searchInput">
+        <input type="button" class="btn bg-primary text-white position-absolute rounded-5 px-5 py-2" id="submitSearch" value="Find">
+      </div>
+    </div>
+  </section>
+  <div class="alert alert-danger d-none w-75 mx-auto text-dark fw-bold" id="searchError"></div>
+
+  <section class="container" id="main-container">
+    <div class="row py-2 d-flex justify-content-center mb-5" id="main-section"></div>
+  </section>
+
+
+	<div class=' w-100 px-5 border-top py-2 text-center text-dark bg-light  border-color mx-auto'>
+		<h2 class='cursor-pointer fs-4 fw-bold text-center px-5'>Weather News</h2>
+		<p class='text-center fw-bold pt-2'>© Copyright 2024 Doaa Mahmoud - All Rights Reserved </p>
+   </div>
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

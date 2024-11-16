@@ -1,0 +1,80 @@
+:root{
+    --mainfont:"Onest", sans-serif;
+    --primaryfont:"Londrina Solid", sans-serif;
+    --secondaryColor:#03346E;
+    --border-color:#475569;
+    --main-padding: 100px;
+
+}
+.mainFont{
+    font-family: var(--mainfont);
+}
+.primaryFont{
+    font-family: var(--primaryfont);
+}
+.tabColor{
+    background-color: var(--secondaryColor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color: rgba(243 ,244 ,246 ,1);
+     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+a{
+    text-decoration: none;
+    display: block;
+
+}
+.border-color{
+    border-color: var(--border-color);
+}
+
+.nav-link{
+    font-size: 18px !important;
+}
+.cursor-pointer{
+  cursor: pointer !important;
+}
+/* #navbar , #searchInput{
+    background-color: #030712 !important;
+} */
+.bg-mainColor{
+    background-color: #d1d5db !important;
+    color: black !important;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.active{
+    color: #7e22ce !important;
+}
+#submitSearch{
+    top: 10px;
+    right: 8px;
+    border: none !important;
+
+}
+input::placeholder{
+    color: black !important;
+    opacity: .5; 
+    font-size: 16px;
+
+}
+#searchInput{
+  padding-left: 20px !important;
+}
+.text-title {
+    background-color: #c81e1e;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 5px 15px;
+  }
+  .main-padding{
+    margin-top: var(--main-padding) !important;
+  }
